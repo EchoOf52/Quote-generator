@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Kugile;
+    src: url("./fonts/Kugile.ttf");
+}
+
+@font-face {
+    font-family: SecondQuotes;
+    src: url("./fonts/SecondQuotes.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #3D365C;
+}
+
+#top {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#top h1 {
+    font-family: SecondQuotes;
+    font-size: 3vw;
+    color: #FFFFF0
+}
+
+#center {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4vw;
+
+}
+
+#quote h2 {
+    font-family: Kugile;
+    letter-spacing: 1px;
+    color: #FFFFF0;
+    font-size: 4vw;
+    line-height: 3.9vw;
+}
+
+#bottom {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 18px 35px;
+    border-radius: 100px;
+    background: transparent;
+    border: 1px solid #FFFFF0;
+    color: #FFFFF0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: SecondQuotes;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+button>i {
+    width: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover i {
+    transform: translateX(5px);
+}
